@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="images/movie-icon.png" type="image/x-icon">
+    <title>Recommender</title>
+</head>
+<body class = "recommend">
+    <div class = "navbar">
+        <a class = "home" href = "index.html">Home</a>
+        <a class = "favs" href = "favs.html">Favorites</a>
+        <a class = "other" href = "other.html">Recent</a>
+        <a class = "active" href = "">Recommend</a>
+    </div>
+    <h1>Recommendation Generator</h1>
+    <div class = "Generator">
+    <h2>Select up to three options:</h2>
+    <div class="dropdown">
+        <button class="dropbtn" id = "btn">Select Genre</button>
+        <div class="dropdown-content">
+          <a href="#" class = "Crime" onclick = "selectOption('Crime')">Crime</a>
+          <a href="#" class = "Drama" onclick = "selectOption('Drama')">Drama</a>
+          <a href="#" class = "Horror" onclick = "selectOption('Horror')">Horror</a>
+          <a href="#" class = "Adventure" onclick = "selectOption('Adventure')">Adventure</a>
+          <a href="#" class = "Biography" onclick = "selectOption('Biography')">Biography</a>
+          <a href="#" class = "Romantic" onclick = "selectOption('Romantic')">Romance</a>
+          <a href="#" class = "Comedy" onclick = "selectOption('Comedy')">Comedy</a>
+          <a href="#" class = "History" onclick = "selectOption('History')">History</a>
+          <a href="#" class = "Action" onclick = "selectOption('Action')">Action</a>
+        </div>
+    </div>
+    <button class = "Enter" onclick = "match()">Generate</button>
+  </div>
+  <div class = "messages">
+    <h4 class = "on" id = "Crime">Crime</h4>
+    <h4 class = "on" id = "Drama">Drama</h4>
+    <h4 class = "on" id = "Horror">Horror</h4>
+    <h4 class = "on" id = "Adventure">Adventure</h4>
+    <h4 class = "on" id = "Biography">Biography</h4>
+    <h4 class = "on" id = "Romantic">Romance</h4>
+    <h4 class = "on" id = "Comedy">Comedy</h4>
+    <h4 class = "on" id = "History">History</h4>
+    <h4 class = "on" id = "Action">Action</h4>
+  </div>
+  <ul id = "output" class =  "movies2"></ul>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
