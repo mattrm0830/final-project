@@ -113,7 +113,7 @@ h1{
     transform: scale(1.1);
 }
 body.favor{
-    background-image: url('/images/movie-back.jpg');
+    background-image: url('./images/movie-back.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -236,11 +236,11 @@ body.favor{
       background-color: antiquewhite;
   }
   .recommend{
-    background-image: url('/images/movie-back.jpg');
+    background-image: url('./images/movie-back.jpg');
 
   }
   .other{
-    background-image: url('/images/movie-back.jpg');
+    background-image: url('./images/movie-back.jpg');
 
   }
   .movies2 li{
